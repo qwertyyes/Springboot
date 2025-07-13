@@ -3,6 +3,36 @@ Endpoint
 GET /api/search
 
 Supports search with multiple filters, pagination, and sorting.
+First add these dependencies that are compatible with each other 
+
+<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Data Elasticsearch -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Spring Boot Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+then add 4 files for controllers,service,models and repository create 1 file for each folder and then make sure your json data file is present in the resources tab.
+
+then after completing write code and run spirng boot first do mvn clean install and then spring booot 
 
 Example Queries
 1. Basic Full-Text Search
